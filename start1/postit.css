@@ -1,0 +1,72 @@
+.postitContainer {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  background-color: #666666;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.postit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10%;
+  position: relative;
+  width: 15%;
+  height: 33%;
+  font-size: 50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+.postit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(180deg, transparent, #0000008c);
+}
+
+.postit:hover {
+  transition: 2s;
+  rotate: none;
+  scale: 1.2;
+}
+
+.postit h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.postit p {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.no1,
+.no5,
+.no7 {
+  background-color: #fefecc;
+  rotate: -8deg;
+}
+
+.no2,
+.no4,
+.no8 {
+  background-color: #cdffcf;
+  rotate: 7deg;
+}
+
+.no3,
+.no6 {
+  background-color: #cccbfb;
+  rotate: -15deg;
+}
